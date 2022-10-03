@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(161, 230, 230);
+}
+
+.main {
+    font-size: 16px;
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.title {
+    text-align: center;
+    margin: 40px 0px 30px;
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2.5px;
+}
+
+.form-section {
+    height: auto;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 0px 0px 26px -2px rgba(48,48,48,1);
+    -moz-box-shadow: 0px 0px 26px -2px rgba(48,48,48,1);
+    box-shadow: 0px 0px 26px -2px rgba(48,48,48,1);
+}
+
+.form {
+    padding: 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form fieldset {
+    border: none;
+}
+
+.name-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-input label {
+    margin-right: 10px;
+}
+
+.first-name input {
+    margin-right: 15px;
+    flex-grow: 1;
+}
+
+.first-name {
+    flex-grow: 1;
+}
+
+.last-name {
+    flex-grow: 1;
+}
+
+label, p {
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+
+input[type="text"], input[type="number"] {
+    font-size: 1em;
+    padding: 10px 10px;
+    width: 200px;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 7px ;
+}
+
+.first-name, .last-name {
+    margin-bottom: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+.container-cpf {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cpf {
+    margin-right: 10px;
+}
+
+.container-age, .container-hobbies {
+    margin-bottom: 15px;
+}
+
+.inputs-age, .inputs-hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.inputs-age div, .inputs-hobbies div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 10px;
+    flex-wrap: nowrap;
+
+}
+
+.inputs-age div label, .inputs-hobbies div label {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.inputs-age div input,.inputs-hobbies div input {
+    width: 18px;
+}
+
+.btns {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.btns button {
+    width: 58px;
+    height: 30px;
+    padding: 22px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: white;
+    background-color: rgb(51, 51, 51);
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.btns button:hover {
+    background-color: rgb(111, 39, 206);
+}
+
+.clear {
+    background-color: rgb(111, 39, 206) !important;
+    transition: all 200ms;
+}
+
+@media screen and (max-width: 968px) {
+    .name-input {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-cpf {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .first-name {
+        flex-grow: 0;
+    }
+    .last-name {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 0;
+    }
+    
+}
